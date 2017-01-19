@@ -1,0 +1,1104 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='en')
+//if (IE 7)&!(IEMobile)
+  html.no-js.lt-ie9.lt-ie8(lang='en')
+//if (IE 8)&!(IEMobile)
+  html.no-js.lt-ie9(lang='en')
+//if (IE 9)
+  html.no-js.ie9(lang='en')
+// [if gt IE 8] <!
+html(lang='en-US')
+  // <![endif]
+  head
+    // Meta Tags
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Shortcodes | Brushed | Responsive One Page Template
+    meta(name='description', content='Insert Your Site Description')
+    // Mobile Specifics
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='HandheldFriendly', content='true')
+    meta(name='MobileOptimized', content='320')
+    // Mobile Internet Explorer ClearType Technology
+    //if IEMobile
+      meta(http-equiv='cleartype', content='on')
+    // Bootstrap
+    link(href='_include/css/bootstrap.min.css', rel='stylesheet')
+    // Main Style
+    link(href='_include/css/main.css', rel='stylesheet')
+    // Supersized
+    link(href='_include/css/supersized.css', rel='stylesheet')
+    link(href='_include/css/supersized.shutter.css', rel='stylesheet')
+    // FancyBox
+    link(href='_include/css/fancybox/jquery.fancybox.css', rel='stylesheet')
+    // Font Icons
+    link(href='_include/css/fonts.css', rel='stylesheet')
+    // Shortcodes
+    link(href='_include/css/shortcodes.css', rel='stylesheet')
+    // Responsive
+    link(href='_include/css/bootstrap-responsive.min.css', rel='stylesheet')
+    link(href='_include/css/responsive.css', rel='stylesheet')
+    // Google Font
+    link(href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900', rel='stylesheet', type='text/css')
+    // Fav Icon
+    link(rel='shortcut icon', href='#')
+    link(rel='apple-touch-icon', href='#')
+    link(rel='apple-touch-icon', sizes='114x114', href='#')
+    link(rel='apple-touch-icon', sizes='72x72', href='#')
+    link(rel='apple-touch-icon', sizes='144x144', href='#')
+    // Modernizr
+    script(src='_include/js/modernizr.js')
+    // Analytics
+    script(type='text/javascript').
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'Insert Your Code']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    // End Analytics
+  body
+    // This section is for Splash Screen
+    section#jSplash
+      #circle
+    // End of Splash Screen
+    // Homepage Slider
+    #home-slider
+      .overlay
+      .slider-text
+        #slidecaption
+      .control-nav
+        a#prevslide.load-item
+          i.font-icon-arrow-simple-left
+        a#nextslide.load-item
+          i.font-icon-arrow-simple-right
+        ul#slide-list
+        a#nextsection(href='#shortcodes')
+          i.font-icon-arrow-simple-down
+    // End Homepage Slider
+    // Header
+    header
+      .sticky-nav
+        a#mobile-nav.menu-nav(href='#menu-nav')
+        #logo
+          a#goUp(href='#home-slider', title='Brushed | Responsive One Page Template') Brushed Template
+        nav#menu
+          ul#menu-nav
+            li
+              a.external(href='/#home-slider') Home
+            li
+              a.external(href='index.html#work') Our Work
+            li
+              a.external(href='index.html#about') About Us
+            li
+              a.external(href='index.html#contact') Contact
+            li.current
+              a(href='/shortcodes') Shortcodes
+    // End Header
+    // Our Shortcodes Section
+    #shortcodes.page
+      .container
+        // Title Page
+        .row
+          .span12
+            .title-page
+              h2.title Shortcodes
+              h3.title-description Useful and Indispensable.
+        // End Title Page
+        // Start Accordion/Toggle Section
+        .row
+          .span6
+            h3.spec Accordion
+            // Start Accordion
+            #accordionArea.accordion
+              .accordion-group
+                .accordion-heading.accordionize
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordionArea', href='#oneArea')
+                    | Design
+                    span.font-icon-arrow-simple-down
+                #oneArea.accordion-body.collapse
+                  .accordion-inner
+                    | Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    | Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                    | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+                    | Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+              .accordion-group
+                .accordion-heading.accordionize
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordionArea', href='#twoArea')
+                    | Development
+                    span.font-icon-arrow-simple-down
+                #twoArea.accordion-body.collapse
+                  .accordion-inner
+                    | Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    | Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                    | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+                    | Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+              .accordion-group
+                .accordion-heading.accordionize
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordionArea', href='#threeArea')
+                    | UX/UI
+                    span.font-icon-arrow-simple-down
+                #threeArea.accordion-body.collapse
+                  .accordion-inner
+                    | Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    | Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                    | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+                    | Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+            // End Accordion
+          .span6
+            h3.spec Toggle
+            // Start Toggle
+            #toggleArea.accordion
+              .accordion-group
+                .accordion-heading.togglize
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#', href='#collapseOne')
+                    | Responsive
+                    span.font-icon-plus
+                    span.font-icon-minus
+                #collapseOne.accordion-body.collapse
+                  .accordion-inner
+                    | Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    | Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                    | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+                    | Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+              .accordion-group
+                .accordion-heading.togglize
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#', href='#collapseTwo')
+                    | Logo Design
+                    span.font-icon-plus
+                    span.font-icon-minus
+                #collapseTwo.accordion-body.collapse
+                  .accordion-inner
+                    | Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    | Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                    | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+                    | Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+              .accordion-group
+                .accordion-heading.togglize
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#', href='#collapseThird')
+                    | Branding
+                    span.font-icon-plus
+                    span.font-icon-minus
+                #collapseThird.accordion-body.collapse
+                  .accordion-inner
+                    | Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    | Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
+                    | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Donec sed odio dui.
+                    | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+                    | Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+            // End Toggle
+        // End Accordion/Toggle Section
+        .row
+          .span12
+            hr
+        // Start Alerts/Tabs Section
+        .row
+          // Start Alerts
+          .span6
+            h3.spec Alerts
+            .alert.alert-standard.fade.in
+              a.close(data-dismiss='alert', href='#') ×
+              strong Oh snap!
+              |  Change a few things up and try submitting again.
+            .alert.fade.in
+              a.close(data-dismiss='alert', href='#') ×
+              strong Warning!
+              |  Best check yo self, you're not looking too good.
+            .alert.alert-error.fade.in
+              a.close(data-dismiss='alert', href='#') ×
+              strong Oh snap!
+              |  Change a few things up and try submitting again.
+            .alert.alert-info.fade.in
+              a.close(data-dismiss='alert', href='#') ×
+              strong Heads up!
+              |  This alert needs your attention, but it's not super important.
+            .alert.alert-success.fade.in
+              a.close(data-dismiss='alert', href='#') ×
+              strong Well done!
+              |  You successfully read this important alert message.
+            .alert.alert-block.alert-danger.fade.in
+              a.close(data-dismiss='alert', href='#') ×
+              h4 Warning!
+              |                     Best check yo self, you're not...
+          // End Alerts
+          // Start Tabs
+          .span6
+            h3.spec Tabs
+            .tabbable
+              ul#myTab.nav.nav-tabs
+                li.active
+                  a(href='#tab1', data-toggle='tab') Tab
+                li
+                  a(href='#tab2', data-toggle='tab') Tab
+                li
+                  a(href='#tab3', data-toggle='tab') Tab
+              .tab-content
+                #tab1.tab-pane.fade.in.active
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
+                  | Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.
+                #tab2.tab-pane.fade.in
+                  | Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
+                #tab3.tab-pane.fade.in
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
+                  | Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit.
+          // End Tabs
+        // End Alerts/Tabs Section
+        .row
+          .span12
+            hr
+        // Start BlockQuote/Tooltip Section
+        .row
+          // Start Blockquote
+          .span6
+            h3.spec Blockquote
+            blockquote
+              p
+                | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+              small
+                cite(title='John Bostic') John Bostic
+          // End Blockquote
+          // Start Tooltip
+          .span6
+            h3.spec Tooltip
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in,
+              a(href='#', data-toggle='tooltip', title="I'm a Simple Tootlip") auctor ut tellus
+              | . Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.
+          // End Tootlip
+        // End BlockQuote/Tooltip Section
+        .row
+          .span12
+            hr
+        // Information Block
+        .row
+          .span12
+            h3.spec Information Block
+            .info-block
+              .info-text
+                h3
+                  span.color-text NEW
+                  |  Brushed- Responsive One Page Template
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem. Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus, id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam.
+                a.button(target='_blank', href='') Purchase
+        // End Information Block
+        .row
+          .span12
+            hr
+        // Start Buttons/Video Responsive Section
+        .row
+          // Start Buttons
+          .span6
+            h3.spec Buttons
+            a.button.button-mini(href='#') Mini
+            a.button.button-small(href='#') Small
+            a.button(href='#') Medium
+            a.button.button-large(href='#') Large
+          // End Buttons
+          // Start Video
+          .span6
+            h3.spec Responsive Video
+            .video-container
+              iframe(src='http://player.vimeo.com/video/50834315?byline=0&portrait=0&badge=0&color=DE5E60')
+          // End Video
+        // End Buttons/Video Responsive Section
+        .row
+          .span12
+            hr
+        // Start Icons Section
+        .row
+          .span12
+            .title-page.margin-50
+              h2.title Icons
+              h3.title-description
+                span.color-text 200+
+                |  Custom and Font Face Icons - Retina Ready.
+            nav.icons-example
+              ul
+                li
+                  a(href='#')
+                    span.font-icon-adjust
+                li
+                  a(href='#')
+                    span.font-icon-asterisk
+                li
+                  a(href='#')
+                    span.font-icon-ban-circle
+                li
+                  a(href='#')
+                    span.font-icon-ban-chart
+                li
+                  a(href='#')
+                    span.font-icon-barcode
+                li
+                  a(href='#')
+                    span.font-icon-beaker
+                li
+                  a(href='#')
+                    span.font-icon-bell
+                li
+                  a(href='#')
+                    span.font-icon-bolt
+                li
+                  a(href='#')
+                    span.font-icon-book
+                li
+                  a(href='#')
+                    span.font-icon-bookmark
+                li
+                  a(href='#')
+                    span.font-icon-briefcase
+                li
+                  a(href='#')
+                    span.font-icon-bullhorn
+                li
+                  a(href='#')
+                    span.font-icon-calendar
+                li
+                  a(href='#')
+                    span.font-icon-camera
+                li
+                  a(href='#')
+                    span.font-icon-certificate
+                li
+                  a(href='#')
+                    span.font-icon-check-empty
+                li
+                  a(href='#')
+                    span.font-icon-check
+                li
+                  a(href='#')
+                    span.font-icon-cloud
+                li
+                  a(href='#')
+                    span.font-icon-cog
+                li
+                  a(href='#')
+                    span.font-icon-cogs
+                li
+                  a(href='#')
+                    span.font-icon-comment
+                li
+                  a(href='#')
+                    span.font-icon-comment-line
+                li
+                  a(href='#')
+                    span.font-icon-comments
+                li
+                  a(href='#')
+                    span.font-icon-comments-line
+                li
+                  a(href='#')
+                    span.font-icon-credit-card
+                li
+                  a(href='#')
+                    span.font-icon-dashboard
+                li
+                  a(href='#')
+                    span.font-icon-download
+                li
+                  a(href='#')
+                    span.font-icon-download_2
+                li
+                  a(href='#')
+                    span.font-icon-edit
+                li
+                  a(href='#')
+                    span.font-icon-edit-check
+                li
+                  a(href='#')
+                    span.font-icon-email
+                li
+                  a(href='#')
+                    span.font-icon-email_2
+                li
+                  a(href='#')
+                    span.font-icon-exclamation
+                li
+                  a(href='#')
+                    span.font-icon-eye
+                li
+                  a(href='#')
+                    span.font-icon-eye_disable
+                li
+                  a(href='#')
+                    span.font-icon-facetime
+                li
+                  a(href='#')
+                    span.font-icon-film
+                li
+                  a(href='#')
+                    span.font-icon-fire
+                li
+                  a(href='#')
+                    span.font-icon-flag
+                li
+                  a(href='#')
+                    span.font-icon-folder-close
+                li
+                  a(href='#')
+                    span.font-icon-folder-open
+                li
+                  a(href='#')
+                    span.font-icon-gift
+                li
+                  a(href='#')
+                    span.font-icon-glass
+                li
+                  a(href='#')
+                    span.font-icon-glass_2
+                li
+                  a(href='#')
+                    span.font-icon-globe_line
+                li
+                  a(href='#')
+                    span.font-icon-group
+                li
+                  a(href='#')
+                    span.font-icon-hdd
+                li
+                  a(href='#')
+                    span.font-icon-headphones-line
+                li
+                  a(href='#')
+                    span.font-icon-headphones
+                li
+                  a(href='#')
+                    span.font-icon-headphones-line-2
+                li
+                  a(href='#')
+                    span.font-icon-headphones-2
+                li
+                  a(href='#')
+                    span.font-icon-heart
+                li
+                  a(href='#')
+                    span.font-icon-heart-line
+                li
+                  a(href='#')
+                    span.font-icon-home
+                li
+                  a(href='#')
+                    span.font-icon-inbox-empty
+                li
+                  a(href='#')
+                    span.font-icon-inbox
+                li
+                  a(href='#')
+                    span.font-icon-info
+                li
+                  a(href='#')
+                    span.font-icon-key
+                li
+                  a(href='#')
+                    span.font-icon-lock
+                li
+                  a(href='#')
+                    span.font-icon-unlock
+                li
+                  a(href='#')
+                    span.font-icon-magic
+                li
+                  a(href='#')
+                    span.font-icon-magnet
+                li
+                  a(href='#')
+                    span.font-icon-map-marker
+                li
+                  a(href='#')
+                    span.font-icon-map-marker-2
+                li
+                  a(href='#')
+                    span.font-icon-map
+                li
+                  a(href='#')
+                    span.font-icon-minus
+                li
+                  a(href='#')
+                    span.font-icon-minus-sign
+                li
+                  a(href='#')
+                    span.font-icon-money
+                li
+                  a(href='#')
+                    span.font-icon-move
+                li
+                  a(href='#')
+                    span.font-icon-music
+                li
+                  a(href='#')
+                    span.font-icon-ok
+                li
+                  a(href='#')
+                    span.font-icon-ok-circle
+                li
+                  a(href='#')
+                    span.font-icon-ok-sign
+                li
+                  a(href='#')
+                    span.font-icon-picture
+                li
+                  a(href='#')
+                    span.font-icon-plus
+                li
+                  a(href='#')
+                    span.font-icon-plus-sign
+                li
+                  a(href='#')
+                    span.font-icon-print
+                li
+                  a(href='#')
+                    span.font-icon-pushpin
+                li
+                  a(href='#')
+                    span.font-icon-pushpin-2
+                li
+                  a(href='#')
+                    span.font-icon-question-sign
+                li
+                  a(href='#')
+                    span.font-icon-random
+                li
+                  a(href='#')
+                    span.font-icon-remove
+                li
+                  a(href='#')
+                    span.font-icon-remove-circle
+                li
+                  a(href='#')
+                    span.font-icon-remove-sign
+                li
+                  a(href='#')
+                    span.font-icon-reorder
+                li
+                  a(href='#')
+                    span.font-icon-resize-vertical
+                li
+                  a(href='#')
+                    span.font-icon-resize-horizontal
+                li
+                  a(href='#')
+                    span.font-icon-retweet
+                li
+                  a(href='#')
+                    span.font-icon-road
+                li
+                  a(href='#')
+                    span.font-icon-rss
+                li
+                  a(href='#')
+                    span.font-icon-search
+                li
+                  a(href='#')
+                    span.font-icon-shopping-cart
+                li
+                  a(href='#')
+                    span.font-icon-signal
+                li
+                  a(href='#')
+                    span.font-icon-signin
+                li
+                  a(href='#')
+                    span.font-icon-signout
+                li
+                  a(href='#')
+                    span.font-icon-sitemap
+                li
+                  a(href='#')
+                    span.font-icon-sort
+                li
+                  a(href='#')
+                    span.font-icon-sort-down
+                li
+                  a(href='#')
+                    span.font-icon-sort-up
+                li
+                  a(href='#')
+                    span.font-icon-star
+                li
+                  a(href='#')
+                    span.font-icon-star-line
+                li
+                  a(href='#')
+                    span.font-icon-star-half
+                li
+                  a(href='#')
+                    span.font-icon-stars
+                li
+                  a(href='#')
+                    span.font-icon-tag
+                li
+                  a(href='#')
+                    span.font-icon-tags
+                li
+                  a(href='#')
+                    span.font-icon-time
+                li
+                  a(href='#')
+                    span.font-icon-tint
+                li
+                  a(href='#')
+                    span.font-icon-upload
+                li
+                  a(href='#')
+                    span.font-icon-upload-2
+                li
+                  a(href='#')
+                    span.font-icon-user
+                li
+                  a(href='#')
+                    span.font-icon-user-border
+                li
+                  a(href='#')
+                    span.font-icon-volume-off
+                li
+                  a(href='#')
+                    span.font-icon-volume-down
+                li
+                  a(href='#')
+                    span.font-icon-volume-up
+                li
+                  a(href='#')
+                    span.font-icon-warning
+                li
+                  a(href='#')
+                    span.font-icon-wrench
+                li
+                  a(href='#')
+                    span.font-icon-zoom-in
+                li
+                  a(href='#')
+                    span.font-icon-zoom-out
+                li
+                  a(href='#')
+                    span.font-icon-expand-view
+                li
+                  a(href='#')
+                    span.font-icon-ban-chart-2
+                li
+                  a(href='#')
+                    span.font-icon-waves
+                li
+                  a(href='#')
+                    span.font-icon-text
+                li
+                  a(href='#')
+                    span.font-icon-layer
+                li
+                  a(href='#')
+                    span.font-icon-phone
+                li
+                  a(href='#')
+                    span.font-icon-phone-sign
+                li
+                  a(href='#')
+                    span.font-icon-phone-boxed
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-up
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-right
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-left
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-down
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-up
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-right
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-left
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-down
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-up
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-right
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-left
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-down
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-up
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-right
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-left
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-down
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-up-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-right-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-left-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-simple-down-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-up-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-right-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-left-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-round-down-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-up-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-right-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-left-circle
+                li
+                  a(href='#')
+                    span.font-icon-arrow-light-round-down-circle
+                li
+                  a(href='#')
+                    span.font-icon-stop
+                li
+                  a(href='#')
+                    span.font-icon-play
+                li
+                  a(href='#')
+                    span.font-icon-pause
+                li
+                  a(href='#')
+                    span.font-icon-forward
+                li
+                  a(href='#')
+                    span.font-icon-backward
+                li
+                  a(href='#')
+                    span.font-icon-fast-forward
+                li
+                  a(href='#')
+                    span.font-icon-fast-backward
+                li
+                  a(href='#')
+                    span.font-icon-step-forward
+                li
+                  a(href='#')
+                    span.font-icon-step-backward
+                li
+                  a(href='#')
+                    span.font-icon-eject
+                li
+                  a(href='#')
+                    span.font-icon-viewport
+                li
+                  a(href='#')
+                    span.font-icon-expand-horizontal
+                li
+                  a(href='#')
+                    span.font-icon-expand-vertical
+                li
+                  a(href='#')
+                    span.font-icon-resize-horizontal-2
+                li
+                  a(href='#')
+                    span.font-icon-resize-vertical-2
+                li
+                  a(href='#')
+                    span.font-icon-expand-view-2
+                li
+                  a(href='#')
+                    span.font-icon-expand-view-3
+                li
+                  a(href='#')
+                    span.font-icon-resize-full
+                li
+                  a(href='#')
+                    span.font-icon-resize-small
+                li
+                  a(href='#')
+                    span.font-icon-resize-fullscreen
+                li
+                  a(href='#')
+                    span.font-icon-read-more
+                li
+                  a(href='#')
+                    span.font-icon-blockquote
+                li
+                  a(href='#')
+                    span.font-icon-file-empty
+                li
+                  a(href='#')
+                    span.font-icon-file
+                li
+                  a(href='#')
+                    span.font-icon-copy
+                li
+                  a(href='#')
+                    span.font-icon-paste
+                li
+                  a(href='#')
+                    span.font-icon-align-left
+                li
+                  a(href='#')
+                    span.font-icon-align-right
+                li
+                  a(href='#')
+                    span.font-icon-align-center
+                li
+                  a(href='#')
+                    span.font-icon-align-justify
+                li
+                  a(href='#')
+                    span.font-icon-indent-left
+                li
+                  a(href='#')
+                    span.font-icon-indent-right
+                li
+                  a(href='#')
+                    span.font-icon-link
+                li
+                  a(href='#')
+                    span.font-icon-columns
+                li
+                  a(href='#')
+                    span.font-icon-columns-2
+                li
+                  a(href='#')
+                    span.font-icon-table
+                li
+                  a(href='#')
+                    span.font-icon-list
+                li
+                  a(href='#')
+                    span.font-icon-list-2
+                li
+                  a(href='#')
+                    span.font-icon-list-3
+                li
+                  a(href='#')
+                    span.font-icon-grid
+                li
+                  a(href='#')
+                    span.font-icon-grid-large
+                li
+                  a(href='#')
+                    span.font-icon-repeat
+                li
+                  a(href='#')
+                    span.font-icon-paper-clip
+                li
+                  a(href='#')
+                    span.font-icon-text-height
+                li
+                  a(href='#')
+                    span.font-icon-text-width
+                li
+                  a(href='#')
+                    span.font-icon-font
+                li
+                  a(href='#')
+                    span.font-icon-bold
+                li
+                  a(href='#')
+                    span.font-icon-italic
+                li
+                  a(href='#')
+                    span.font-icon-underline
+                li
+                  a(href='#')
+                    span.font-icon-strikethrough
+        // End Icons Section
+        .row
+          .span12
+            hr
+        // Start Social Icons
+        .row
+          .span12
+            .title-page.margin-50
+              h2.title Social Icons
+              h3.title-description
+                | Showing your
+                span.color-text Social
+                |  Profiles.
+            nav.icons-example
+              ul
+                li
+                  a(href='#')
+                    span.font-icon-social-500px
+                li
+                  a(href='#')
+                    span.font-icon-social-addthis
+                li
+                  a(href='#')
+                    span.font-icon-social-behance
+                li
+                  a(href='#')
+                    span.font-icon-social-bebo
+                li
+                  a(href='#')
+                    span.font-icon-social-blogger
+                li
+                  a(href='#')
+                    span.font-icon-social-deviant-art
+                li
+                  a(href='#')
+                    span.font-icon-social-digg
+                li
+                  a(href='#')
+                    span.font-icon-social-dribbble
+                li
+                  a(href='#')
+                    span.font-icon-social-email
+                li
+                  a(href='#')
+                    span.font-icon-social-envato
+                li
+                  a(href='#')
+                    span.font-icon-social-evernote
+                li
+                  a(href='#')
+                    span.font-icon-social-facebook
+                li
+                  a(href='#')
+                    span.font-icon-social-flickr
+                li
+                  a(href='#')
+                    span.font-icon-social-forrst
+                li
+                  a(href='#')
+                    span.font-icon-social-github
+                li
+                  a(href='#')
+                    span.font-icon-social-google-plus
+                li
+                  a(href='#')
+                    span.font-icon-social-grooveshark
+                li
+                  a(href='#')
+                    span.font-icon-social-last-fm
+                li
+                  a(href='#')
+                    span.font-icon-social-linkedin
+                li
+                  a(href='#')
+                    span.font-icon-social-myspace
+                li
+                  a(href='#')
+                    span.font-icon-social-paypal
+                li
+                  a(href='#')
+                    span.font-icon-social-photobucket
+                li
+                  a(href='#')
+                    span.font-icon-social-pinterest
+                li
+                  a(href='#')
+                    span.font-icon-social-quora
+                li
+                  a(href='#')
+                    span.font-icon-social-share-this
+                li
+                  a(href='#')
+                    span.font-icon-social-skype
+                li
+                  a(href='#')
+                    span.font-icon-social-soundcloud
+                li
+                  a(href='#')
+                    span.font-icon-social-stumbleupon
+                li
+                  a(href='#')
+                    span.font-icon-social-tumblr
+                li
+                  a(href='#')
+                    span.font-icon-social-twitter
+                li
+                  a(href='#')
+                    span.font-icon-social-viddler
+                li
+                  a(href='#')
+                    span.font-icon-social-vimeo
+                li
+                  a(href='#')
+                    span.font-icon-social-virb
+                li
+                  a(href='#')
+                    span.font-icon-social-wordpress
+                li
+                  a(href='#')
+                    span.font-icon-social-yahoo
+                li
+                  a(href='#')
+                    span.font-icon-social-yelp
+                li
+                  a(href='#')
+                    span.font-icon-social-youtube
+                li
+                  a(href='#')
+                    span.font-icon-social-zerply
+        // End Social Icons
+    // End Shortcodes Section
+    // Footer
+    footer
+      p.credits
+        | ©2013 Brushed.
+        a(href='http://themes.alessioatzeni.com/html/brushed/', title='Brushed | Responsive One Page Template') Brushed Template
+        |  by
+        a(href='http://www.alessioatzeni.com/', title='Alessio Atzeni | Web Designer & Front-end Developer') Alessio Atzeni
+    // End Footer
+    // Back To Top
+    a#back-to-top(href='#')
+      i.font-icon-arrow-simple-up
+    // End Back to Top
+    // Js
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    // jQuery Core
+    script(src='_include/js/bootstrap.min.js')
+    // Bootstrap
+    script(src='_include/js/supersized.3.2.7.min.js')
+    // Slider
+    script(src='_include/js/waypoints.js')
+    // WayPoints
+    script(src='_include/js/waypoints-sticky.js')
+    // Waypoints for Header
+    script(src='_include/js/jquery.isotope.js')
+    // Isotope Filter
+    script(src='_include/js/jquery.fancybox.pack.js')
+    // Fancybox
+    script(src='_include/js/jquery.fancybox-media.js')
+    // Fancybox for Media
+    script(src='_include/js/jquery.tweet.js')
+    // Tweet
+    script(src='_include/js/plugins.js')
+    // Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi
+    script(src='_include/js/main.js')
+    // Default JS
+    // End Js

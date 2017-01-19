@@ -5,12 +5,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-
+var passport = require('passport');
 // load defined routers
 var index = require('./routes/index');
+var shortcodes = require('./routes/shortcodes');
+var login = require('./routes/login');
+var signin = require('./routes/signin');
 
 var app = express();
 
+mongoose.connect('mongodb://localhost/net_database')
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -30,7 +34,12 @@ db.once('open', function(){
 });
 
 // register routers in express
+
+
 app.use('/', index);
+app.use('/shortcodes',shortcodes);
+app.use('/login',login);
+app.use('/signin',signin);
 
 
 var port = process.env.PORT || 3000;

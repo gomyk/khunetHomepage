@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/3.jpg', title : '<div class="slide-content">동현</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/2.jpg', title : '<div class="slide-content">석혐</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/1.jpg', title : '<div class="slide-content">승주</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/4.jpg', title : '<div class="slide-content">병익</div>', thumb : '', url : ''}
+											{image : '_include/img/slider-images/1.jpg', title : '<div class="slide-content">NET</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/2.jpg', title : '<div class="slide-content">NET</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/3.jpg', title : '<div class="slide-content">NET</div>', thumb : '', url : ''},
+											{image : '_include/img/slider-images/4.jpg', title : '<div class="slide-content">NET</div>', thumb : '', url : ''}
 									],
 
 		// Theme Options
