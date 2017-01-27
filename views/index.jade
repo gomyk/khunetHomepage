@@ -86,8 +86,12 @@ html(lang='en-US')
     header
       .sticky-nav
         a#mobile-nav.menu-nav(href='#menu-nav')
-        #logo
-          a#goUp(href='/login', title='NET | 정보보호 동아리')
+        nav#menu-left
+          ul#menu-nav
+            li
+              a.external(href='/login', title='NET | 정보보호 동아리') 로그인
+            li
+              a.external(href='/signin', title='NET | 정보보호 동아리') SignIn
         nav#menu
           ul#menu-nav
             li.current
@@ -99,20 +103,18 @@ html(lang='en-US')
             li
               a(href='#contact') Contact
             li
+              a.external(href='/notice') Notice
+            li
               a.external(href='/shortcodes') Shortcodes
-      .sticky-nav
-        a.button(href='/signin', title='NET | 정보보호 동아리') SignIn
     #work.page
       .container
         // Title Page
         .row
           .span12
             .title-page
-              h2.title Our Work
+              h2.title 동아리 근황
               h3.title-description
-                | Check Out Our Projects on
-                a(href='#') Dribbble
-                | .
+                | 활동 및 행사
         // End Title Page
         // Portfolio Projects
         .row
@@ -120,100 +122,100 @@ html(lang='en-US')
             // Filter
             nav#options.work-nav
               ul#filters.option-set(data-option-key='filter')
-                li.type-work Type of Work
+                li.type-work 카테고리
                 li
-                  a.selected(href='#filter', data-option-value='*') All Projects
+                  a.selected(href='#filter', data-option-value='*') 모두 보기
                 li
-                  a(href='#filter', data-option-value='.design') Design
+                  a(href='#filter', data-option-value='.study') 학술 활동
                 li
-                  a(href='#filter', data-option-value='.photography') Photography
+                  a(href='#filter', data-option-value='.contest') 대회 참여
                 li
-                  a(href='#filter', data-option-value='.video') Video
+                  a(href='#filter', data-option-value='.newyear') 신년회
             // End Filter
           .span9
             .row
               section#projects
                 ul#thumbs
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.design
+                  li.item-thumbs.span3.study
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='The City', href='_include/img/work/full/image-01-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='NET 세미나', href='_include/img/work/full/image-01-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-01.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-01.jpg', alt='14학번 이상윤/로봇관련 세미나')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.design
+                  li.item-thumbs.span3.study
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='The Office', href='_include/img/work/full/image-02-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='NET 세미나', href='_include/img/work/full/image-02-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-02.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-02.jpg', alt='14학번 방신우/PYTHON')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.photography
+                  li.item-thumbs.span3.study
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='The Mountains', href='_include/img/work/full/image-03-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='NET 세미나', href='_include/img/work/full/image-03-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-03.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-03.jpg', alt='신년회 겸 세미나')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.video
+                  li.item-thumbs.span3.newyear
                     // Fancybox Media - Gallery Enabled - Title - Link to Video
-                    a.hover-wrap.fancybox-media(data-fancybox-group='video', title='Video Content From Vimeo', href='http://vimeo.com/51460511')
+                    a.hover-wrap.fancybox-media(data-fancybox-group='gallery', title='신년회', href='_include/img/work/full/image-08-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-08.jpg', alt='Video')
+                    img(src='_include/img/work/thumbs/image-08.jpg', alt='gallery')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.photography
+                  li.item-thumbs.span3.study
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='The Sea', href='_include/img/work/full/image-04-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='NET 세미나', href='_include/img/work/full/image-04-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-04.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-04.jpg', alt='세미나를 열심히...듣고 있는 모습')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.photography
+                  li.item-thumbs.span3.contest
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='Clouds', href='_include/img/work/full/image-05-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='KHUTHON', href='_include/img/work/full/image-05-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-05.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-05.jpg', alt='쿠톤 참가자들/NET 두팀 모두 수상')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.video
+                  li.item-thumbs.span3.newyear
                     // Fancybox Media - Gallery Enabled - Title - Link to Video
-                    a.hover-wrap.fancybox-media(data-fancybox-group='video', title='Video Content From Vimeo', href='http://vimeo.com/50834315')
+                    a.hover-wrap.fancybox-media(data-fancybox-group='gallery', title='신년회', href='_include/img/work/full/image-09-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-09.jpg', alt='Video')
+                    img(src='_include/img/work/thumbs/image-09.jpg', alt='NET 신년회')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.design
+                  li.item-thumbs.span3.contest
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='The Dark', href='_include/img/work/full/image-06-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='KHUTHON', href='_include/img/work/full/image-06-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-06.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-06.jpg', alt='민재기/2016회장')
                   // End Item Project
                   // Item Project and Filter Name
-                  li.item-thumbs.span3.design
+                  li.item-thumbs.span3.newyear
                     // Fancybox - Gallery Enabled - Title - Full Image
-                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='The Beach', href='_include/img/work/full/image-07-full.jpg')
+                    a.hover-wrap.fancybox(data-fancybox-group='gallery', title='신년회', href='_include/img/work/full/image-07-full.jpg')
                       span.overlay-img
                       span.overlay-img-thumb.font-icon-plus
                     // Thumb Image and Description
-                    img(src='_include/img/work/thumbs/image-07.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.')
+                    img(src='_include/img/work/thumbs/image-07.jpg', alt='NET 신년회')
                   // End Item Project
         // End Portfolio Projects
     // End Our Work Section
@@ -236,12 +238,16 @@ html(lang='en-US')
                 span.overlay-img
                 span.overlay-text-thumb 담당교수/홍충선
               img(src='_include/img/profile/profile-01.jpg', alt='hong')
-            h3.profile-name Hong choong sun
+            .title-page
+             h3.profile-name 홍충선
+             p.profile-description
+               h6 &네트워크 연구실
+               h6 &여기에다가 머ㅜ쓰지
             p.profile-description
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat
-              a(href='#') hendrerit dictum
+              |교수님에대한 소개
+              a(href='http://ce.khu.ac.kr/blog/blog_page.php?r_Idx=10&b_menuNum=4') 교수님 링크
               | .
-              |             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              |교수님의 말씀
             .social
               ul.social-icons
                 li
@@ -261,12 +267,16 @@ html(lang='en-US')
                 span.overlay-img
                 span.overlay-text-thumb 회장/김동현
               img(src='_include/img/profile/profile-02.jpg', alt='donghyun')
-            h3.profile-name Kim Dong Hyun
+            .title-page
+             h3.profile-name 김동현
+             p.profile-description
+               h6 오버워치 실버
+               h6 리그오브레전드 플레티넘
             p.profile-description
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat
-              a(href='#') hendrerit dictum
+              | 회장으로서 다짐
+              a(href='#')  나는 회장이다
               | .
-              |             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              |최소영웅대접은 받아야된다고 생각한다. 길게써야 글이  이뻐보임 아래부터 정렬되서 이뻐보임
             .social
               ul.social-icons
                 li
@@ -281,14 +291,18 @@ html(lang='en-US')
             .image-wrap
               .hover-wrap
                 span.overlay-img
-                span.overlay-text-thumb 개노답/한병익
+                span.overlay-text-thumb 서버관리/한병익
               img(src='_include/img/profile/profile-03.jpg', alt='Han')
-            h3.profile-name Han Byung Ik
+            .title-page
+             h3.profile-name 한병익
+             p.profile-description
+              h6 오버워치 다이아
+              h6 리그오브레전드 다이아
             p.profile-description
-              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat
-              a(href='#') hendrerit dictum
+              | 여기 한병익이 하고싶은 말
+              a(href='#')  강조하고싶은말
               | .
-              |             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              | 할말쓰면됨
             .social
               ul.social-icons
                 li

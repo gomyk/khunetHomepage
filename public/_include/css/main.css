@@ -246,7 +246,10 @@ h3.spec {
 /* ==================================================
    Margin Bottom Sets
 ================================================== */
-
+.table-board{
+	 border: 1px solid black;
+ 	border-collapse: collapse;
+}
 .margin-0{
 	margin-bottom:0 !important;
 }
@@ -526,7 +529,10 @@ nav#menu {
 	float: right;
 	margin-right: 20px;
 }
-
+nav#menu-left{
+	float: left;
+	margin-left: 20px;
+}
 nav#menu #menu-nav {
 	margin: 0;
 	padding: 0;
@@ -537,11 +543,23 @@ nav#menu #menu-nav li {
 	display: inline-block;
 	margin-left: 50px;
 }
+nav#menu-left #menu-nav li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 50px;
+}
 
 nav#menu #menu-nav li:first-child {
 	margin-left: 0;
 }
-
+nav#menu-left #menu-nav li a {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 60px;
+	display: block;
+	text-transform: uppercase;
+}
 nav#menu #menu-nav li a {
 	color: #FFFFFF;
 	font-size: 16px;
@@ -629,6 +647,12 @@ nav#menu #menu-nav li a:hover {
 
 .page {
 	background: #2F3238;
+	padding: 100px 0;
+	position: relative;
+	z-index: 99;
+}
+.page-donghyun {
+	background: #FFFFFF;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;

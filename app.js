@@ -6,12 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 // load defined routers
+var session = require('express-session');
 var index = require('./routes/index');
 var shortcodes = require('./routes/shortcodes');
 var login = require('./routes/login');
 var signin = require('./routes/signin');
-
+var notice = require('./routes/notice');
 var app = express();
 
 mongoose.connect('mongodb://localhost/net_database')
@@ -21,17 +23,43 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+
+
+require('./auth/passport').setup();
+app.use(session({ secret: 'secret',
+resave: false,
+saveUninitialized: false,
+cookie: {
+    maxAge: 1000 * 60 * 60
+}
+ }));
+
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+function IsAuthorized(req, res, next) {
+    if (req.isAuthenticated())
+        return next();
+    else
+        return res.redirect('/');
+
+}
 
 var db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function(){
   console.log("Connected to open server");
 });
+//configure passport
+var User = require('./models/user');
 
 // register routers in express
 
@@ -40,7 +68,7 @@ app.use('/', index);
 app.use('/shortcodes',shortcodes);
 app.use('/login',login);
 app.use('/signin',signin);
-
+app.use('/notice',notice);
 
 var port = process.env.PORT || 3000;
 // open a port

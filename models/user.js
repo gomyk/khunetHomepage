@@ -11,10 +11,12 @@ var userSchema = new Schema({
   age: Number,
   website: String
 });
-
-// the schema is useless so far
-// we need to create a model using it
-var User = mongoose.model('User', userSchema);
-
-// make this available to our users in our Node applications
-module.exports = User;
+userSchema.methods.validPassword = function(password) {
+  if(password ==this.password ){
+    return true;
+  }
+  else{
+    return false;
+  }
+};
+module.exports = mongoose.model('User', userSchema);
